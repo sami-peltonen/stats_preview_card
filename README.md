@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/sami-peltonen/stats_preview_card)
+- Solution URL: (https://github.com/sami-peltonen/stats_preview_card)
 
 ## My process
 
@@ -60,6 +60,6 @@ I learned to resize images while maintaining their aspect ratio, like this:
 
 ## Author
 
-- Website - (https://github.com/sami-peltonen)
+- Website -[Sami Peltonen] (https://github.com/sami-peltonen)
 
 
