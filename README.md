@@ -29,6 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/sami-peltonen/stats_preview_card)
+- Live Site URL: (https://sami-peltonen.github.io/stats_preview_card/)
 
 ## My process
 
