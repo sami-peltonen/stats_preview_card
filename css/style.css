@@ -1,0 +1,178 @@
+:root {
+  --clr-mainbg: hsl(233, 47%, 7%);
+  --clr-cardbg: hsl(244, 38%, 16%);
+  --clr-accent: hsl(277, 64%, 61%);
+
+  --clr-mainhead: hsl(0, 0%, 100%);
+  --clr-mainpara: hsla(0, 0%, 100%, 0.75);
+  --clr-stathead: hsla(0, 0%, 100%, 0.6);
+
+  /* font-family: 'Inter', sans-serif;
+  font-family: 'Lexend Deca', sans-serif; */
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background: var(--clr-mainbg);
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  margin: 18vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  overflow: hidden;
+  background-color: var(--clr-cardbg);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-radius: 10px;
+}
+
+.attribution {
+  font-size: 8px;
+}
+
+h1,
+p,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  padding: 4vw 6vw 2vw 4vw;
+}
+
+p {
+  padding: 0vw 7vw 4vw 4vw;
+  font-size: 13px;
+  line-height: 1.5rem;
+  color: var(--clr-mainpara);
+}
+
+ul {
+  padding: 0vw 8vw 3vw 4vw;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  color: var(--clr-stathead);
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+li span {
+  padding-bottom: 0.2rem;
+  color: white;
+  display: block;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+strong {
+  color: var(--clr-accent);
+}
+
+.stats1 {
+  text-transform: lowercase;
+}
+
+.image {
+  background: var(--clr-accent);
+}
+
+.image_desktop {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.image_mobile {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  main {
+    margin: 10vw;
+  }
+
+  li {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 12px;
+  }
+
+  main {
+    margin: 20vw;
+    margin-top: 1vw;
+    margin-bottom: 5vw;
+    border-radius: 20px;
+    grid-template-columns: none;
+    grid-template-rows: 30% 70%;
+    text-align: center;
+  }
+
+  p {
+    font-size: 11px;
+  }
+
+  ul {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  ul li {
+    padding-bottom: 1rem;
+  }
+
+  .image {
+    grid-row: 1;
+  }
+
+  .image_mobile {
+    display: unset;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+  }
+
+  .image_desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 530px) {
+  body {
+    font-size: 11px; 
+    /* display: unset; //this defaults the value */
+  }
+
+  main {
+    margin: 4rem;
+  }
+
+  p {
+    padding: 0vw 7vw 6vw 4vw;
+  }
+
+  li {
+    font-size: 10px;
+  }
+}
